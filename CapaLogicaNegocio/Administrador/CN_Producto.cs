@@ -119,7 +119,7 @@ namespace CapaLogicaNegocio.Administrador
                 producto.Cantidad = Convert.ToInt32(cantidad);
             }
             producto.Idproveedor = Convert.ToInt32(this.Idproveedor);
-            //producto.Fecha = DateTime.Now.Date;
+            producto.Fecha = DateTime.Now.Date;
         }
         #endregion
     }

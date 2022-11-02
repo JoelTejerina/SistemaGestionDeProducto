@@ -36,23 +36,23 @@ namespace CapaVistaUsuario.Administrador
             CV_Botonera.btnFormularios(this, btnCancelar);
         }
 
-        private void dgvProducto_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void dgvProducto_RowEnter(object sender, DataGridViewCellEventArgs e)
         {
             if (dgvProducto.SelectedRows.Count > 0)
             {
-                grpProvincia.Text = "Identificacion Stock Nº " + dgvProducto.Rows[dgvProducto.SelectedRows[0].Index].Cells["idProducto"].Value.ToString();
-                txtNombre.Text = dgvProducto.Rows[dgvProducto.SelectedRows[0].Index].Cells["nombre"].Value.ToString();
-                txtDescripcion.Text = dgvProducto.Rows[dgvProducto.SelectedRows[0].Index].Cells["descripcion"].Value.ToString();
+                grpProducto.Text = "Identificacion Stock Nº " + dgvProducto.Rows[dgvProducto.SelectedRows[0].Index].Cells["idProducto"].Value.ToString();
+                txtNombre.Text = dgvProducto.Rows[dgvProducto.SelectedRows[0].Index].Cells["Nombre"].Value.ToString();
+                txtDescripcion.Text = dgvProducto.Rows[dgvProducto.SelectedRows[0].Index].Cells["Descripcion"].Value.ToString();
                 ckbStock.Checked = dgvProducto.Rows[dgvProducto.SelectedRows[0].Index].Cells["Stock"].Selected;
                 cmbProveedor.Text = dgvProducto.Rows[dgvProducto.SelectedRows[0].Index].Cells["idProveedor"].Value.ToString();
-                txtPrecio.Text = dgvProducto.Rows[dgvProducto.SelectedRows[0].Index].Cells["precio"].Value.ToString();
+                txtPrecio.Text = dgvProducto.Rows[dgvProducto.SelectedRows[0].Index].Cells["Precio"].Value.ToString();
                 txtCantidad.Text = dgvProducto.Rows[dgvProducto.SelectedRows[0].Index].Cells["Cantidad"].Value.ToString();
             }
         }
 
         #region BOTONES
 
-        private void btnGuardaCambios_Click(object sender, EventArgs e)
+        private void btnGuardar_Click(object sender, EventArgs e)
         {
             try
             {
@@ -70,6 +70,27 @@ namespace CapaVistaUsuario.Administrador
                 MessageBox.Show("No se guardaron los datos por: \n" + ex);
             }
 
+            errorProvider1.Dispose();
+            errorProvider2.Dispose();
+        }
+
+        private void btnGuardaCambios_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                PasarDatos(true);
+
+                prod.ModificarProducto();
+
+                MostrarProducto();
+                CV_Botonera.btnFormularios(this, btnGuardaCambios);
+                CV_Utiles.BloquearControles(this);
+                dgvProducto.Select();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("No se guardaron los datos por: \n" + ex);
+            }
             errorProvider1.Dispose();
             errorProvider2.Dispose();
         }
@@ -123,7 +144,6 @@ namespace CapaVistaUsuario.Administrador
 
         #endregion
 
-
         #region Validaciones_Nivel_Formulario
 
         private void txtNombre_Validated(object sender, EventArgs e)
@@ -151,25 +171,11 @@ namespace CapaVistaUsuario.Administrador
             dgvProducto.DataSource = Pers.MostrarProducto();
         }
 
-        private void LlenarCombo(ComboBox CMB, string NombreTabla, string CampoID, string CampoDescrip, string Condicion = "")
-        {
-            /*  CN_LlenarCombos LC = new CN_LlenarCombos();
-
-              LC.NomTabla = NombreTabla;
-              LC.CampoId = CampoID;
-              LC.CampoDescrip = CampoDescrip;
-              LC.Condicion = Condicion;
-
-              CMB.DataSource = LC.Cargar();
-              CMB.DisplayMember = CampoDescrip;
-              CMB.ValueMember = CampoID;*/
-        }
-
         private void PasarDatos(bool origen)
         {
             if (origen == true)
             {
-                prod.Idproducto = Convert.ToInt32(dgvProducto.Rows[dgvProducto.SelectedRows[0].Index].Cells["Id"].Value.ToString());
+                prod.Idproducto = Convert.ToInt32(dgvProducto.Rows[dgvProducto.SelectedRows[0].Index].Cells["idProducto"].Value.ToString());
             }
             else
             {
@@ -179,9 +185,31 @@ namespace CapaVistaUsuario.Administrador
             prod.Descripcion = txtDescripcion.Text;
             prod.Precio = txtPrecio.Text;
             prod.Cantidad = txtCantidad.Text;
-            prod.Idproveedor = cmbProveedor.SelectedValue.ToString();
-            //prod.Fecha = DateTime.Now.Date.ToString();
+            if (cmbProveedor.SelectedItem == null)
+            {
+                prod.Idproveedor = "0";
+            }
+            else
+            {
+                prod.Idproveedor = cmbProveedor.SelectedValue.ToString();
+            }
+            prod.Fecha = DateTime.Now.Date.ToString();
+        }
+
+        #endregion
+
+        private void dgvProducto_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (dgvProducto.SelectedRows.Count > 0)
+            {
+                grpProducto.Text = "Identificacion Stock Nº " + dgvProducto.Rows[dgvProducto.SelectedRows[0].Index].Cells["idProducto"].Value.ToString();
+                txtNombre.Text = dgvProducto.Rows[dgvProducto.SelectedRows[0].Index].Cells["Nombre"].Value.ToString();
+                txtDescripcion.Text = dgvProducto.Rows[dgvProducto.SelectedRows[0].Index].Cells["Descripcion"].Value.ToString();
+                ckbStock.Checked = dgvProducto.Rows[dgvProducto.SelectedRows[0].Index].Cells["Stock"].Selected;
+                cmbProveedor.Text = dgvProducto.Rows[dgvProducto.SelectedRows[0].Index].Cells["idProveedor"].Value.ToString();
+                txtPrecio.Text = dgvProducto.Rows[dgvProducto.SelectedRows[0].Index].Cells["Precio"].Value.ToString();
+                txtCantidad.Text = dgvProducto.Rows[dgvProducto.SelectedRows[0].Index].Cells["Cantidad"].Value.ToString();
+            }
         }
     }
-        #endregion
 }
