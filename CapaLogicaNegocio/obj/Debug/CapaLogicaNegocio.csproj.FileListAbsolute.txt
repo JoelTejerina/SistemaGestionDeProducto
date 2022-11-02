@@ -211,6 +211,6 @@ C:\Users\Joel\Desktop\C#\SistemaLoguin\CapaLogicaNegocio\bin\Debug\CapaComun.pdb
 C:\Users\Joel\Desktop\C#\SistemaLoguin\CapaLogicaNegocio\bin\Debug\MySql.Data.xml
 C:\Users\Joel\Desktop\C#\SistemaLoguin\CapaLogicaNegocio\obj\Debug\CapaLogicaNegocio.csproj.AssemblyReference.cache
 C:\Users\Joel\Desktop\C#\SistemaLoguin\CapaLogicaNegocio\obj\Debug\CapaLogicaNegocio.csproj.CoreCompileInputs.cache
-C:\Users\Joel\Desktop\C#\SistemaLoguin\CapaLogicaNegocio\obj\Debug\CapaLogicaNegocio.csproj.CopyComplete
 C:\Users\Joel\Desktop\C#\SistemaLoguin\CapaLogicaNegocio\obj\Debug\CapaLogicaNegocio.dll
 C:\Users\Joel\Desktop\C#\SistemaLoguin\CapaLogicaNegocio\obj\Debug\CapaLogicaNegocio.pdb
+C:\Users\Joel\Desktop\C#\SistemaLoguin\CapaLogicaNegocio\obj\Debug\CapaLogicaNegocio.csproj.CopyComplete

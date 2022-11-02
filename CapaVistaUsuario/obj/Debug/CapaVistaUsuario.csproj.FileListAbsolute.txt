@@ -346,6 +346,6 @@ C:\Users\Joel\Desktop\C#\SistemaLoguin\CapaVistaUsuario\obj\Debug\CapaVistaUsuar
 C:\Users\Joel\Desktop\C#\SistemaLoguin\CapaVistaUsuario\obj\Debug\CapaVistaUsuario.Properties.Resources.resources
 C:\Users\Joel\Desktop\C#\SistemaLoguin\CapaVistaUsuario\obj\Debug\CapaVistaUsuario.csproj.GenerateResource.cache
 C:\Users\Joel\Desktop\C#\SistemaLoguin\CapaVistaUsuario\obj\Debug\CapaVistaUsuario.csproj.CoreCompileInputs.cache
-C:\Users\Joel\Desktop\C#\SistemaLoguin\CapaVistaUsuario\obj\Debug\CapaVistaUsuario.csproj.CopyComplete
 C:\Users\Joel\Desktop\C#\SistemaLoguin\CapaVistaUsuario\obj\Debug\CapaVistaUsuario.exe
 C:\Users\Joel\Desktop\C#\SistemaLoguin\CapaVistaUsuario\obj\Debug\CapaVistaUsuario.pdb
+C:\Users\Joel\Desktop\C#\SistemaLoguin\CapaVistaUsuario\obj\Debug\CapaVistaUsuario.Administrador.frmProveedor.resources

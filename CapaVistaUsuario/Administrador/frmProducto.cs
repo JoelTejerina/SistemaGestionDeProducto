@@ -108,7 +108,7 @@ namespace CapaVistaUsuario.Administrador
             this.Dispose();
         }
 
-        private void btnCancelar_Click(object sender, EventArgs e)
+        private void btnCancelar_Click_1(object sender, EventArgs e)
         {
             CV_Botonera.btnFormularios(this, btnCancelar);
             CV_Utiles.BloquearControles(this);
@@ -193,7 +193,7 @@ namespace CapaVistaUsuario.Administrador
             {
                 prod.Idproveedor = cmbProveedor.SelectedValue.ToString();
             }
-            prod.Fecha = DateTime.Now.Date.ToString();
+            //prod.Fecha = DateTime.Now.Date.ToString();
         }
 
         #endregion
