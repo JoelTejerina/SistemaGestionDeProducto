@@ -44,6 +44,7 @@
   <ItemGroup>
     <Compile Include="Administrador\CN_Personas.cs" />
     <Compile Include="Administrador\CN_Producto.cs" />
+    <Compile Include="Administrador\CN_Proveedor.cs" />
     <Compile Include="CL_clsBitacora.cs" />
     <Compile Include="LlenarCombos\CN_LlenarCombos.cs" />
     <Compile Include="Loguin\clsLogicaLoguin.cs" />

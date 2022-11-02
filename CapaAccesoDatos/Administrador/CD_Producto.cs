@@ -91,10 +91,10 @@ namespace CapaAccesoDatos.Administrador
         public void InsertarProducto()
         {
             string sSql = "INSERT INTO Stock " +
-               "(Nombre, Descripcion, Stock, Precio, idProveedor, Cantidad) " +
+               "(Nombre, Descripcion, Stock, Precio, idProveedor, Cantidad, Fecha) " +
                 "values" +
                 " ('" + nombre + "','" + descripcion + "'," + stock + "," + precio +
-                "," + idproveedor + "," + cantidad + ")";
+                "," + idproveedor + "," + cantidad + "," + Fecha + ")";
             clsEjecutarComando Ejecutar = new clsEjecutarComando();
             Ejecutar.Ejecutar(sSql);
         }
@@ -103,8 +103,8 @@ namespace CapaAccesoDatos.Administrador
         {
             string sSql = "UPDATE Stock set " +
                 "Nombre='" + nombre + "', Descripcion='" + descripcion + "', Stock =" + stock +
-                ", Precio = " + precio + ", Idproveedor = '" + idproveedor + "', Cantidad = '" + cantidad +
-                "', Fecha = '" + fecha + " WHERE idProducto =" + idproducto;
+                ", Precio = " + precio + ", Idproveedor = '" + idproveedor + "', Cantidad = " + cantidad + 
+                " WHERE idProducto =" + idproducto;
             clsEjecutarComando Ejecutar = new clsEjecutarComando();
             Ejecutar.Ejecutar(sSql);
         }
