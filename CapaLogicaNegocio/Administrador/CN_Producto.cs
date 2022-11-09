@@ -118,6 +118,7 @@ namespace CapaLogicaNegocio.Administrador
             {
                 producto.Cantidad = Convert.ToInt32(cantidad);
             }
+            producto.Stock = this.Stock;
             producto.Idproveedor = Convert.ToInt32(this.Idproveedor);
             //producto.Fecha = DateTime.Now.Date;
         }

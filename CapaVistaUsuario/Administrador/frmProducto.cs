@@ -23,11 +23,10 @@ namespace CapaVistaUsuario.Administrador
 
         private void frmProducto_Load_1(object sender, EventArgs e)
         {
-            //Acomodo el dataGridView a mi necesidad
-            dgvProducto.SelectionMode = DataGridViewSelectionMode.FullRowSelect; //Selecciona toda la fila
-            dgvProducto.ReadOnly = true; //hace que la grilla no se pueda editar
-            dgvProducto.MultiSelect = false; //desactiva la seleccion multiple
-            dgvProducto.AllowUserToAddRows = false; //desactiva  la ultima fila 
+            dgvProducto.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dgvProducto.ReadOnly = true;
+            dgvProducto.MultiSelect = false;
+            dgvProducto.AllowUserToAddRows = false;
 
             CN_LlenarCombos llenarCMB = new CN_LlenarCombos(cmbProveedor, "Proveedor", "idProveedor", "Direccion");
             MostrarProducto();
@@ -193,6 +192,7 @@ namespace CapaVistaUsuario.Administrador
             {
                 prod.Idproveedor = cmbProveedor.SelectedValue.ToString();
             }
+            prod.Stock = ckbStock.Checked.ToString();
             //prod.Fecha = DateTime.Now.Date.ToString();
         }
 

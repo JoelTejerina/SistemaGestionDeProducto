@@ -9,7 +9,6 @@ namespace CapaVistaUsuario
 {
     public partial class frmPersonas : Form
     {
-        //Instancio los objetos de las clses que utilizo en el form
         CN_Personas Pers = new CN_Personas();
         CV_Validar_Mail ValidaCorreo = new CV_Validar_Mail();
 

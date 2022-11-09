@@ -45,6 +45,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Administrador\CD_Gerencia.cs" />
     <Compile Include="Administrador\CD_Personas.cs" />
     <Compile Include="Administrador\CD_Producto.cs" />
     <Compile Include="Administrador\CD_Proveedor.cs" />

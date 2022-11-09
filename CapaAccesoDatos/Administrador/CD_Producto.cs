@@ -20,7 +20,7 @@ namespace CapaAccesoDatos.Administrador
         private int idproducto;
         private string nombre;
         private string descripcion;
-        private bool stock;
+        private string stock;
         private double precio;
         private int idproveedor;
         private int cantidad;
@@ -47,7 +47,7 @@ namespace CapaAccesoDatos.Administrador
             set { descripcion = value; }
         }
 
-        public bool Stock
+        public string Stock
         {
             get => stock;
             set { stock = value; }

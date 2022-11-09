@@ -349,3 +349,6 @@ C:\Users\Joel\Desktop\C#\SistemaLoguin\CapaVistaUsuario\obj\Debug\CapaVistaUsuar
 C:\Users\Joel\Desktop\C#\SistemaLoguin\CapaVistaUsuario\obj\Debug\CapaVistaUsuario.exe
 C:\Users\Joel\Desktop\C#\SistemaLoguin\CapaVistaUsuario\obj\Debug\CapaVistaUsuario.pdb
 C:\Users\Joel\Desktop\C#\SistemaLoguin\CapaVistaUsuario\obj\Debug\CapaVistaUsuario.Administrador.frmProveedor.resources
+C:\Users\Joel\Desktop\C#\SistemaLoguin\CapaVistaUsuario\obj\Debug\CapaVistaUsuario.csproj.SuggestedBindingRedirects.cache
+C:\Users\Joel\Desktop\C#\SistemaLoguin\CapaVistaUsuario\obj\Debug\CapaVistaUsuario.csproj.CopyComplete
+C:\Users\Joel\Desktop\C#\SistemaLoguin\CapaVistaUsuario\obj\Debug\CapaVistaUsuario.Administrador.frmGerencia.resources

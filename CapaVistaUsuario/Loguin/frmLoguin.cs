@@ -33,7 +33,6 @@ namespace CapaVistaUsuario
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
-            //pregunto si desea cerrar, dando la opción de cancelar la operación
             DialogResult resultado = MessageBox.Show("Esta seguro de CERRAR el sistema?",
                                 "FINALIZAR SISTEMA",
                                 MessageBoxButtons.OKCancel,
@@ -42,7 +41,7 @@ namespace CapaVistaUsuario
 
             if (resultado != DialogResult.Cancel)
             {
-                Application.Exit(); //Cierre del formulario
+                Application.Exit();
             }
             
         }
@@ -223,11 +222,6 @@ namespace CapaVistaUsuario
             {
                 btnIngresar.PerformClick();
             }
-        }
-
-        private void txtPassword_TextChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }
