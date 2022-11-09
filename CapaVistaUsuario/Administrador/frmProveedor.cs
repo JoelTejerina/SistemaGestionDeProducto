@@ -23,11 +23,10 @@ namespace CapaVistaUsuario.Administrador
 
         private void frmProveedor_Load(object sender, EventArgs e)
         {
-            //Acomodo el dataGridView a mi necesidad
-            dgvProveedor.SelectionMode = DataGridViewSelectionMode.FullRowSelect; //Selecciona toda la fila
-            dgvProveedor.ReadOnly = true; //hace que la grilla no se pueda editar
-            dgvProveedor.MultiSelect = false; //desactiva la seleccion multiple
-            dgvProveedor.AllowUserToAddRows = false; //desactiva  la ultima fila 
+            dgvProveedor.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dgvProveedor.ReadOnly = true;
+            dgvProveedor.MultiSelect = false;
+            dgvProveedor.AllowUserToAddRows = false; 
 
             CN_LlenarCombos llenarCMB = new CN_LlenarCombos(cmbLocalidad, "Localidades", "idLocalidad", "Localidades");
             MostrarProveedor();
@@ -68,9 +67,6 @@ namespace CapaVistaUsuario.Administrador
             {
                 MessageBox.Show("No se guardaron los datos por: \n" + ex);
             }
-
-            //errorProvider1.Dispose();
-            //errorProvider2.Dispose();
         }
 
         private void btnGuardaCambios_Click(object sender, EventArgs e)
@@ -90,8 +86,6 @@ namespace CapaVistaUsuario.Administrador
             {
                 MessageBox.Show("No se guardaron los datos por: \n" + ex);
             }
-            //errorProvider1.Dispose();
-            //errorProvider2.Dispose();
         }
 
         private void btnAgregar_Click(object sender, EventArgs e)
@@ -114,8 +108,6 @@ namespace CapaVistaUsuario.Administrador
             CV_Utiles.BloquearControles(this);
             CV_Utiles.LimpiarControles(this);
             dgvProveedor.Select();
-            //errorProvider1.Dispose();
-            //errorProvider2.Dispose();
         }
 
         private void btnModificar_Click(object sender, EventArgs e)

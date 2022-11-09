@@ -24,7 +24,7 @@ namespace CapaAccesoDatos.Administrador
         private double precio;
         private int idproveedor;
         private int cantidad;
-        private DateTimeOffset fecha;
+
         #endregion
 
         #region PROPERTIES
@@ -70,12 +70,6 @@ namespace CapaAccesoDatos.Administrador
             get => cantidad;
             set { cantidad = value; }
         }
-
-        public DateTimeOffset Fecha
-        {
-            get => fecha;
-            set { fecha = value; }
-        }
         #endregion
 
         #region METODOS
@@ -90,11 +84,13 @@ namespace CapaAccesoDatos.Administrador
 
         public void InsertarProducto()
         {
+            string fecha = DateTime.Now.ToString("dd-MM-yyyy");
+
             string sSql = "INSERT INTO Stock " +
                "(Nombre, Descripcion, Stock, Precio, idProveedor, Cantidad, Fecha) " +
                 "values" +
                 " ('" + nombre + "','" + descripcion + "'," + stock + "," + precio +
-                "," + idproveedor + "," + cantidad + "," + Fecha + ")";
+                "," + idproveedor + "," + cantidad + "," + fecha + ")";
             clsEjecutarComando Ejecutar = new clsEjecutarComando();
             Ejecutar.Ejecutar(sSql);
         }
