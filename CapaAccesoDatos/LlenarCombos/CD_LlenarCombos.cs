@@ -1,11 +1,6 @@
 ﻿using System.Data;
 using System.Data.OleDb;
 
-/* Esta clase me permite cargar cualquier comboBox desde una tabla
-   recibiendo  el Nombre de la tabala, el campo Id de la tabla relacionado al dato que mostrara el ComboBox 
-   y el campo que mostrara el ComboBox.
-   como opcional podra recibir una condicion .
-*/
 namespace CapaAccesoDatos
 {
     public class CD_LlenarCombos : clsConexion 

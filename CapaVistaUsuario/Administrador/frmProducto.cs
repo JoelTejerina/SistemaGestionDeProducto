@@ -28,7 +28,7 @@ namespace CapaVistaUsuario.Administrador
             dgvProducto.MultiSelect = false;
             dgvProducto.AllowUserToAddRows = false;
 
-            CN_LlenarCombos llenarCMB = new CN_LlenarCombos(cmbProveedor, "Proveedor", "idProveedor", "Direccion");
+            CN_LlenarCombos llenarCMB = new CN_LlenarCombos(cmbProveedor, "Proveedor", "idProveedor", "Nombre");
             MostrarProducto();
             dgvProducto.Select();
             CV_Utiles.BloquearControles(this);
@@ -193,7 +193,6 @@ namespace CapaVistaUsuario.Administrador
                 prod.Idproveedor = cmbProveedor.SelectedValue.ToString();
             }
             prod.Stock = ckbStock.Checked.ToString();
-            //prod.Fecha = DateTime.Now.Date.ToString();
         }
 
         #endregion

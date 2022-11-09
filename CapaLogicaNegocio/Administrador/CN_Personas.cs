@@ -30,7 +30,7 @@ namespace CapaLogicaNegocio.Administrador
 
         public int IdPersona
         {
-            get => idpersona; //Expresion Lambda (Se suprime el Return y las llaves)
+            get => idpersona;
             set { idpersona = value; }
         }
 

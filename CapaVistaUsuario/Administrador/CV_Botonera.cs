@@ -2,9 +2,7 @@
 using System.Windows.Forms;
 
 namespace CapaVistaUsuario
-{
-    // Esta clase desactiva y oculta o activa y muestra los botones de un formulario
-    // dependiendo del nombre del boton presionado por el usuario
+{ 
     class CV_Botonera
     {
 
