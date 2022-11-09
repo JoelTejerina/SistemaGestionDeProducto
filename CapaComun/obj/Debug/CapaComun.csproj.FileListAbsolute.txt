@@ -16,3 +16,9 @@ C:\Users\Titor Javier\Desktop\proyectooo\SistemaLoguin\CapaComun\obj\Debug\CapaC
 C:\Users\Titor Javier\Desktop\proyectooo\SistemaLoguin\CapaComun\obj\Debug\CapaComun.csproj.CoreCompileInputs.cache
 C:\Users\Titor Javier\Desktop\proyectooo\SistemaLoguin\CapaComun\obj\Debug\CapaComun.dll
 C:\Users\Titor Javier\Desktop\proyectooo\SistemaLoguin\CapaComun\obj\Debug\CapaComun.pdb
+C:\Users\Joel\Desktop\C#\SistemaLoguin\CapaComun\bin\Debug\CapaComun.dll
+C:\Users\Joel\Desktop\C#\SistemaLoguin\CapaComun\bin\Debug\CapaComun.pdb
+C:\Users\Joel\Desktop\C#\SistemaLoguin\CapaComun\obj\Debug\CapaComun.csproj.AssemblyReference.cache
+C:\Users\Joel\Desktop\C#\SistemaLoguin\CapaComun\obj\Debug\CapaComun.csproj.CoreCompileInputs.cache
+C:\Users\Joel\Desktop\C#\SistemaLoguin\CapaComun\obj\Debug\CapaComun.dll
+C:\Users\Joel\Desktop\C#\SistemaLoguin\CapaComun\obj\Debug\CapaComun.pdb

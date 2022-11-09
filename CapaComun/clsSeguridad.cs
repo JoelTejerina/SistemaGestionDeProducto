@@ -8,20 +8,8 @@ using System.Security.Cryptography;
 
 namespace CapaComun
 {
-    /* 
-    Esta clase contiene funciones para encriptar/desencriptar
-    Al ser estática no es necesario instanciar un objeto para 
-    usar las funciones Encriptar y DesEncriptar
-    Contiene 3 Metodos, los dos primeros (Encriptar - Desencriptar)
-    Codifican y decodifican un texto plano en base de 64 
-    El tercer metodo ENCRIPTA utilizando Hash. Hay que tener en cuenta 
-    que todos los metodos HASH (MD5 - SHA1 - SHA256 etc) SON DE UN SOLO SENTIDO
-    es decir que no pueden desencriptarse.
-    */
-
     public static class clsSeguridad
     {
-        // Encripta una cadena
         public static string Encriptar(this string _cadenaAencriptar)
         {
             string result = string.Empty;
@@ -30,7 +18,6 @@ namespace CapaComun
             return result;
         }
 
-        // Esta función desencripta la cadena que le envíamos en el parámentro de entrada.
         public static string DesEncriptar(this string _cadenaAdesencriptar)
         {
             string result = string.Empty;

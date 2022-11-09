@@ -12,13 +12,6 @@ namespace CapaAccesoDatos.Administrador
 {
     public class CD_Personas
     {
-
-        //clsConexion conexion = new clsConexion();
-        //CD_Conexion conexion = new CD_Conexion();
-        /* OleDbDataReader DR;
-         DataTable DT = new DataTable();
-         OleDbCommand comando = new OleDbCommand();*/
-
         #region ATRIBUTOS
         private int idpersona;
         private string apellido;

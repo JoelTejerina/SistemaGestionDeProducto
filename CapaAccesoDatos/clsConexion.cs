@@ -20,7 +20,7 @@ namespace CapaAccesoDatos
             cadena = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|Loguin.accdb";
             cadenaMySql= "Server =localhost; Database = login; Uid = root; Pwd = 1234" ;
         }
-        protected OleDbConnection GetConexion() // property que devuelve la conexion
+        protected OleDbConnection GetConexion()
         {
             return new OleDbConnection(cadena);
         }

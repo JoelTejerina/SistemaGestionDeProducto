@@ -188,3 +188,4 @@ C:\Users\Joel\Desktop\C#\SistemaLoguin\CapaAccesoDatos\bin\Debug\K4os.Hash.xxHas
 C:\Users\Joel\Desktop\C#\SistemaLoguin\CapaAccesoDatos\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
 C:\Users\Joel\Desktop\C#\SistemaLoguin\CapaAccesoDatos\bin\Debug\CapaComun.pdb
 C:\Users\Joel\Desktop\C#\SistemaLoguin\CapaAccesoDatos\bin\Debug\MySql.Data.xml
+C:\Users\Joel\Desktop\C#\SistemaLoguin\CapaAccesoDatos\obj\Debug\CapaAccesoDatos.csproj.CopyComplete

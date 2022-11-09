@@ -30,13 +30,13 @@
         {
             this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnEliminar = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
             this.btnGuardaCambios = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.btnModificar = new System.Windows.Forms.Button();
             this.btnAgregar = new System.Windows.Forms.Button();
+            this.btnEliminar = new System.Windows.Forms.Button();
             this.dgvProducto = new System.Windows.Forms.DataGridView();
             this.grpProducto = new System.Windows.Forms.GroupBox();
             this.ckbStock = new System.Windows.Forms.CheckBox();
@@ -64,28 +64,17 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.panel1.Controls.Add(this.btnSalir);
-            this.panel1.Controls.Add(this.btnGuardaCambios);
-            this.panel1.Controls.Add(this.btnCancelar);
-            this.panel1.Controls.Add(this.btnGuardar);
             this.panel1.Controls.Add(this.btnModificar);
             this.panel1.Controls.Add(this.btnAgregar);
             this.panel1.Controls.Add(this.btnEliminar);
+            this.panel1.Controls.Add(this.btnGuardar);
+            this.panel1.Controls.Add(this.btnGuardaCambios);
+            this.panel1.Controls.Add(this.btnCancelar);
             this.panel1.Location = new System.Drawing.Point(20, -11);
             this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(190, 692);
             this.panel1.TabIndex = 7;
-            // 
-            // btnEliminar
-            // 
-            this.btnEliminar.Location = new System.Drawing.Point(15, 132);
-            this.btnEliminar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(159, 35);
-            this.btnEliminar.TabIndex = 5;
-            this.btnEliminar.Text = "Eliminar";
-            this.btnEliminar.UseVisualStyleBackColor = true;
-            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click_1);
             // 
             // btnSalir
             // 
@@ -152,6 +141,17 @@
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = true;
             this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
+            // 
+            // btnEliminar
+            // 
+            this.btnEliminar.Location = new System.Drawing.Point(15, 132);
+            this.btnEliminar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(159, 35);
+            this.btnEliminar.TabIndex = 5;
+            this.btnEliminar.Text = "Eliminar";
+            this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click_1);
             // 
             // dgvProducto
             // 

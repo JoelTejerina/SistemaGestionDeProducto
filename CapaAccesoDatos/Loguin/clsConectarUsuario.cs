@@ -48,10 +48,8 @@ namespace CapaAccesoDatos
             }
         }
 
-        // --------------------------------------------------------------------
         public bool UserVerific(string user)
         {
-            //Verifica si el usuario existe extrayendo 
             string sSql = "SELECT Usuarios.IdUsuario, Usuarios.Usuario, Usuarios.IdPersona, Personal.Apellido, Personal.Nombres, Cargos.Cargo " +
                "FROM(Cargos INNER JOIN Personal ON Cargos.[IdCargo] = Personal.[IdCargo]) " +
                "INNER JOIN Usuarios ON Personal.[IdPersona] = Usuarios.[IdPersona]" +

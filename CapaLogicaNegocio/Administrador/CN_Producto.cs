@@ -18,7 +18,6 @@ namespace CapaLogicaNegocio.Administrador
         private string precio;
         private string idproveedor;
         private string cantidad;
-        private string fecha;
 
         #endregion
 
@@ -66,11 +65,6 @@ namespace CapaLogicaNegocio.Administrador
             set { cantidad = value; }
         }
 
-        public string Fecha
-        {
-            get => fecha;
-            set { fecha = value; }
-        }
         #endregion
 
         #region METODOS
@@ -118,8 +112,8 @@ namespace CapaLogicaNegocio.Administrador
             {
                 producto.Cantidad = Convert.ToInt32(cantidad);
             }
+            producto.Stock = this.Stock;
             producto.Idproveedor = Convert.ToInt32(this.Idproveedor);
-            //producto.Fecha = DateTime.Now.Date;
         }
         #endregion
     }

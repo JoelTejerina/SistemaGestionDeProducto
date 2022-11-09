@@ -38,13 +38,7 @@ namespace CapaVistaUsuario
         }
 
         private void frmPrincipal_FormClosing(object sender, FormClosingEventArgs e)
-        /*
-         * El evento FormClosing se produce al momento de cerrar el formulario, en este evento
-         * que se dispara a través de una instruccion o bien al clickear sobre la X de los ControlBox
-         * del formulario, es donde colocamos lo que queremos que suceda al cerrar
-         * */
         {
-            //pregunto si desea cerrar, dando la opción de cancelar la operación
             DialogResult resultado = MessageBox.Show("Esta seguro de CERRAR el sistema?",
                                 "FINALIZAR SISTEMA",
                                 MessageBoxButtons.OKCancel,
@@ -53,7 +47,7 @@ namespace CapaVistaUsuario
 
             if (resultado == DialogResult.Cancel)
             {
-                e.Cancel = true; //Cancela el cierre del formulario
+                e.Cancel = true;
             }
         }
 

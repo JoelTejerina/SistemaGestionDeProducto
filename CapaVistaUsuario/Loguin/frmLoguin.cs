@@ -33,7 +33,6 @@ namespace CapaVistaUsuario
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
-            //pregunto si desea cerrar, dando la opción de cancelar la operación
             DialogResult resultado = MessageBox.Show("Esta seguro de CERRAR el sistema?",
                                 "FINALIZAR SISTEMA",
                                 MessageBoxButtons.OKCancel,
@@ -42,7 +41,7 @@ namespace CapaVistaUsuario
 
             if (resultado != DialogResult.Cancel)
             {
-                Application.Exit(); //Cierre del formulario
+                Application.Exit();
             }
             
         }
@@ -163,8 +162,6 @@ namespace CapaVistaUsuario
             if (BuscarUsuario.LoginUser(txtUsuario.Text,  txtPassword.Text)== false)
             {
                 MessageBox.Show("Usuario o Password inexistente Fallida");
-                //Grabo en la BITACORA el ingreso del usuario
-                //A lo bestia
                 if (BuscarUsuario.LoginUser(txtUsuario.Text, null) == false) {
 
                     UserCache.Apellido = txtUsuario.Text + " (Usuario no encontrado)";
@@ -172,7 +169,6 @@ namespace CapaVistaUsuario
 
                 CL_clsBitacora Guardar = new CL_clsBitacora("Ingreso al Sistema", "Ingreso Erroneo", "frmLoguin");
 
-                // bloquear al usuario si introdujo 3 intentos fallidos
                 if (intentos < 3)
                 {
                     if (intentos == 0)
@@ -195,10 +191,7 @@ namespace CapaVistaUsuario
             }
             else
             {
-                //El usuario ya esta loguedo, reemplazar el codigo siguiente de mensaje por 
-                //el ingreso al sistema
                 string perm = "";
-                //leo todos los permisos de la HashTable del usuario
                 foreach (DictionaryEntry elementos in UserCache.PermisosUsuario)
                 {
                     perm += elementos.Key  + " " + elementos.Value  + "\n";
@@ -206,7 +199,6 @@ namespace CapaVistaUsuario
 
                 MessageBox.Show("Ingreso Exitoso!!! \n \n" + UserCache.Apellido + " " + UserCache.Nombres +
                      "\n CARGO: " + UserCache.Cargo + "\n \n PERMISOS: \n" + perm);
-                //Grabo en la BITACORA el ingreso del usuario
                 CL_clsBitacora Guardar = new CL_clsBitacora("Ingreso al Sistema", "Ingreso Exitoso", "frmLoguin");
 
                 this.DialogResult = DialogResult.OK;
@@ -223,11 +215,6 @@ namespace CapaVistaUsuario
             {
                 btnIngresar.PerformClick();
             }
-        }
-
-        private void txtPassword_TextChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }
