@@ -24,6 +24,7 @@ namespace CapaAccesoDatos.Administrador
         private int telefono;
         private string cuit;
         private string prueba;
+        private string pruebatomas;
 
         #endregion
 
