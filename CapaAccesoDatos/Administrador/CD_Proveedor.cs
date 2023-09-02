@@ -23,6 +23,7 @@ namespace CapaAccesoDatos.Administrador
         private int idlocalidad;
         private int telefono;
         private string cuit;
+        private string prueba;
 
         #endregion
 
